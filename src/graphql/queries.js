@@ -8,22 +8,30 @@ export const getLocation = /* GraphQL */ `
       name
       image
       description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
       restaurants {
         items {
           id
           name
           address
           image
+          contacts
           avgRatings
           numOfRatings
           locationID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -39,13 +47,51 @@ export const listLocations = /* GraphQL */ `
         name
         image
         description
-        restaurants {
-          nextToken
-        }
+        _version
+        _deleted
+        _lastChangedAt
         createdAt
         updatedAt
+        restaurants {
+          nextToken
+          startedAt
+        }
       }
       nextToken
+      startedAt
+    }
+  }
+`;
+export const syncLocations = /* GraphQL */ `
+  query SyncLocations(
+    $filter: ModelLocationFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncLocations(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        name
+        image
+        description
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+        restaurants {
+          nextToken
+          startedAt
+        }
+      }
+      nextToken
+      startedAt
     }
   }
 `;
@@ -56,22 +102,30 @@ export const getRestaurant = /* GraphQL */ `
       name
       address
       image
+      contacts
       avgRatings
       numOfRatings
       locationID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
       location {
         id
         name
         image
         description
-        restaurants {
-          nextToken
-        }
+        _version
+        _deleted
+        _lastChangedAt
         createdAt
         updatedAt
+        restaurants {
+          nextToken
+          startedAt
+        }
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -87,21 +141,73 @@ export const listRestaurants = /* GraphQL */ `
         name
         address
         image
+        contacts
         avgRatings
         numOfRatings
         locationID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
         location {
           id
           name
           image
           description
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
-        createdAt
-        updatedAt
       }
       nextToken
+      startedAt
+    }
+  }
+`;
+export const syncRestaurants = /* GraphQL */ `
+  query SyncRestaurants(
+    $filter: ModelRestaurantFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncRestaurants(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        name
+        address
+        image
+        contacts
+        avgRatings
+        numOfRatings
+        locationID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+        location {
+          id
+          name
+          image
+          description
+          _version
+          _deleted
+          _lastChangedAt
+          createdAt
+          updatedAt
+        }
+      }
+      nextToken
+      startedAt
     }
   }
 `;

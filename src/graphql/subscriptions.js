@@ -8,22 +8,30 @@ export const onCreateLocation = /* GraphQL */ `
       name
       image
       description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
       restaurants {
         items {
           id
           name
           address
           image
+          contacts
           avgRatings
           numOfRatings
           locationID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -34,22 +42,30 @@ export const onUpdateLocation = /* GraphQL */ `
       name
       image
       description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
       restaurants {
         items {
           id
           name
           address
           image
+          contacts
           avgRatings
           numOfRatings
           locationID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -60,22 +76,30 @@ export const onDeleteLocation = /* GraphQL */ `
       name
       image
       description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
       restaurants {
         items {
           id
           name
           address
           image
+          contacts
           avgRatings
           numOfRatings
           locationID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -86,22 +110,30 @@ export const onCreateRestaurant = /* GraphQL */ `
       name
       address
       image
+      contacts
       avgRatings
       numOfRatings
       locationID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
       location {
         id
         name
         image
         description
-        restaurants {
-          nextToken
-        }
+        _version
+        _deleted
+        _lastChangedAt
         createdAt
         updatedAt
+        restaurants {
+          nextToken
+          startedAt
+        }
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -112,22 +144,30 @@ export const onUpdateRestaurant = /* GraphQL */ `
       name
       address
       image
+      contacts
       avgRatings
       numOfRatings
       locationID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
       location {
         id
         name
         image
         description
-        restaurants {
-          nextToken
-        }
+        _version
+        _deleted
+        _lastChangedAt
         createdAt
         updatedAt
+        restaurants {
+          nextToken
+          startedAt
+        }
       }
-      createdAt
-      updatedAt
     }
   }
 `;
@@ -138,22 +178,30 @@ export const onDeleteRestaurant = /* GraphQL */ `
       name
       address
       image
+      contacts
       avgRatings
       numOfRatings
       locationID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
       location {
         id
         name
         image
         description
-        restaurants {
-          nextToken
-        }
+        _version
+        _deleted
+        _lastChangedAt
         createdAt
         updatedAt
+        restaurants {
+          nextToken
+          startedAt
+        }
       }
-      createdAt
-      updatedAt
     }
   }
 `;

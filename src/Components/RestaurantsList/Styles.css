@@ -1,0 +1,13 @@
+.restaurantImage {
+  width: 250;
+  height: 205;
+}
+.viewMenuButton {
+  margin-right: -15%;
+  position: absolute;
+  border-radius: 10;
+  color: #ffffff;
+  background-color: #15273f;
+  border-width: 0;
+  padding: 10;
+}
