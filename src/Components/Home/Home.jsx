@@ -1,12 +1,12 @@
 import React from 'react';
-import Clock from '../../Clock/Clock';
-import Search from '../../Search/Search';
-import Trending from '../../Trending/Trending';
-import './Header.css'
+import Clock from '../Clock/Clock';
+import Search from '../Search/Search';
+import Trending from '../Trending/Trending';
+import './Home.css'
 
-function Header() {
+function Home() {
     return (
-        <div className='Header'>
+        <div className='Container'>
             {/* <div style={{position:'absolute', margin: 10, right:0, color: "#000000"}}>
                 <Clock/>
             </div> */}
@@ -40,4 +40,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Home;

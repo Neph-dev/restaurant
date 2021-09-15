@@ -1,10 +1,16 @@
-import './App.css';
-import Footer from './Components/Footer/Footer';
-import Header from './Components/Home/Header/Header';
-import Main from './Components/Home/Body/Body';
-
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Location from './Components/Location/Location';
+
+import './App.css';
+
+/* import screens for routing */
+import HomeScreen from './Screens/HomeScreen/HomeScreen';
+import LocationScreen from './Screens/LocationScreen/LocationScreen';
+
+/* amplify configuration imports */
+import Amplify from "aws-amplify";
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
+
 
 function App() {
   return (
@@ -12,10 +18,10 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <Header/>
+            <HomeScreen/>
           </Route>
           <Route exact path="/location">
-            <Location/>
+            <LocationScreen/>
           </Route>
         </Switch>
       </BrowserRouter>

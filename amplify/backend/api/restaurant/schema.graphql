@@ -1,0 +1,32 @@
+type Location @model {
+  id: ID!
+  name: String!
+  image: String!
+  description: String
+
+  restaurants: [Restaurant] @connection(keyName: "byRestaurant", fields: ["id"])
+}
+
+type Restaurant
+  @model
+  @key(
+    name: "byRestaurant"
+    fields: [
+      "locationID"
+      "name"
+      "address"
+      "image"
+      "avgRatings"
+      "numOfRatings"
+    ]
+  ) {
+  id: ID!
+  name: String!
+  address: String!
+  image: String!
+  avgRatings: Float!
+  numOfRatings: Int!
+
+  locationID: ID!
+  location: Location @connection(fields: ["locationID"])
+}
