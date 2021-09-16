@@ -1,6 +1,9 @@
 import React from 'react';
 import "./Styles.css"
 
+import StarsReviews from '../StarsReviews/StarsReviews';
+
+
 function RestaurantsList(props) {
 
     const id = props.value.id
@@ -42,20 +45,9 @@ function RestaurantsList(props) {
                     </div>
 
                     <div style={{display:'flex'}}>
-                        <div style={{marginTop: 10, display:'flex'}}>
-                            <div style={{fontWeight:'bold', marginRight:5}}>Ratings:</div> 
-                            <img src="https://i.postimg.cc/XqmPkwRW/star-2.png" 
-                                style={{width:20, height:20, alignItems:'center', justifyContent:'center'}}/>
-                            <img src="https://i.postimg.cc/XqmPkwRW/star-2.png" 
-                                style={{width:20, height:20, alignItems:'center', justifyContent:'center'}}/>
-                            <img src="https://i.postimg.cc/XqmPkwRW/star-2.png" 
-                                style={{width:20, height:20, alignItems:'center', justifyContent:'center'}}/>
-                            <img src="https://i.postimg.cc/XqmPkwRW/star-2.png" 
-                                style={{width:20, height:20, alignItems:'center', justifyContent:'center'}}/>
-                            <img src="https://i.postimg.cc/7hNQ2FqF/1828970.png" 
-                                style={{width:20, height:20, marginRight:5}}/>
-                            Reviewed By {numOfRatings} people 
-                        </div>
+                        {/* Number of stars components */}
+                        <StarsReviews avgRatings={avgRatings} numOfRatings={numOfRatings}/>
+
                         <div style={{ display:'flex', justifyContent:'center', marginLeft:"20%" }}>
                             <button 
                                 style={{

@@ -1,0 +1,343 @@
+restaurantsInSandton 
+{
+    name: The Grillhouse,
+    address: Building 1 11 Alice Lane, Corner 5th St, Sandhurst, Sandton, 2196 ,
+    contacts: 011 783 6132  ,
+    image: https://i.postimg.cc/zX7kVNVY/sandton-gallery-3.jpg,
+    numOfRatings: 2264,
+    avgRatings: 4.5,
+
+}
+{
+    name: The Bigmouth Sushi & Grill,
+    address: Shop No. 13 & 14 Nelson Mandela Square Cnr Maude &, 5th St, Johannesburg, Sandton, 2016,
+    contacts: 063 293 8869,
+    image: ,
+    numOfRatings: 4.5,
+    avgRatings: 2370,
+
+}
+{
+    name: San Deck, Bar & Restaurant,
+    address: Sandton Sun Hotel Corner Fifth Street and, Alice Ln, Sandhurst, Sandton, 2196,
+    contacts: 011 780 5000,
+    image: https://i.postimg.cc/ZKz7jHf4/San-Deck-11-slide.jpg,
+    numOfRatings: 2757,
+    avgRatings: 4.4,
+
+}
+{
+    name: Pigalle,
+    address: UO9, Michelangelo Towers, Maude St, Sandton, 2196,
+    contacts: 011 884 8899,
+    image: https://i.postimg.cc/mgXSxySc/pigalle-restaurant-green-point-cape-town-21.jpg,
+    numOfRatings: 616,
+    avgRatings: 4.5,
+
+}
+{
+    name: Hard Rock Cafe,
+    address: 8 Maude Street, 10 & 10A Mandela Square, Sandton, 2146,
+    contacts: 011 784 3144,
+    image: https://i.postimg.cc/NFRwSMqM/ba73a42a8f326b059de74bc07e6ebc3a.jpg,
+    numOfRatings: 3969,
+    avgRatings: 4.6,
+
+}
+{
+    name: The Codfather,
+    address: 3 Stan Rd, Morningside, Sandton, 2196,
+    contacts: 010 020 0286,
+    image: https://i.postimg.cc/tCmzwzks/19ede0bc0f695bf9d664e07615c18604.jpg,
+    numOfRatings: 1567,
+    avgRatings: 4.5,
+
+}
+{
+    name: Trumps Grillhouse and Butchery,
+    address: Nelson Mandela Square, 5th St &, Rivonia Rd, Sandton, 2196,
+    contacts: 011 784 2366,
+    image: https://i.postimg.cc/zBXbqsX8/IMG-1124.jpg,
+    numOfRatings: 1767,
+    avgRatings: 4.5,
+
+}
+{
+    name: Gemelli,
+    address: 13 Posthouse Link Centre Cnr, Main Rd, Bryanston, Sandton, 2191,
+    contacts: 010 591 4333,
+    image: https://i.postimg.cc/rmK4166g/10342-36687.jpg,
+    numOfRatings: 2817,
+    avgRatings: 4.5,
+
+}
+{
+    name: Chaplin's Grill,
+    address: 61 Woodlands Ave, Hurlingham, Sandton, 2070,
+    contacts: 076 564 5979,
+    image: https://i.postimg.cc/2S032H7t/inside.jpg,
+    numOfRatings: 507,
+    avgRatings: 4.4,
+
+}
+{
+    name: Maximillien,
+    address: DaVinci Hotel and Suites on Nelson Mandela Square,
+    contacts: 011 292 7111,
+    image: https://i.postimg.cc/zvYfV4qy/maximillien-restaurant-19.jpg,
+    numOfRatings: 189,
+    avgRatings: 4.5,
+
+}
+{
+    name: Saint Restaurant,
+    address: The Marc Corner Rivonia &, Maude St, Sandton, 2014,
+    contacts: 010 594 5888,
+    image: https://i.postimg.cc/DyYt6Lbg/Saint-Restaurant-Interior-23-600x450.jpg,
+    numOfRatings: 1463,
+    avgRatings: 4.4,
+
+}
+{
+    name: Olives and Plates,
+    address: Cnr William Nicol Dr &, Corner Jan Smuts Ave, Hyde Park, Sandton, 2196,
+    contacts: 010 013 1074,
+    image: https://i.postimg.cc/pVSwYKjB/photo5jpg.jpg,
+    numOfRatings: 4.7,
+    avgRatings: 609,
+
+}
+{
+    name: Pappas On The Square,
+    address: Corner 5th &, Maude St, Sandton, 2196,
+    contacts: 011 884 9991,
+    image: https://i.postimg.cc/Fs7JwX74/pappas-on-the-square.jpg,
+    numOfRatings: 756,
+    avgRatings: 4.3,
+
+}
+{
+    name: Café del Sol Botanico,
+    address: Cnr William Nicol & Ballyclare Dr Bryanston Shopping Centre, Bryanston, Sandton, 2021,
+    contacts: 011 463 0207,
+    image: https://i.postimg.cc/tRtYfCXw/cafe-del-Botanico-2.jpg,
+    numOfRatings: 854,
+    avgRatings: 4.5,
+
+}
+{
+    name: Signature Restaurant,
+    address: Shop U13, Morningside Shopping Centre Cnr Rivonia & Outspan Roads, Morningside, Johannesburg, 2196,
+    contacts: 087 940 3880,
+    image: https://i.postimg.cc/hPvcrSh9/265-signature-restaurant-morningside.jpg,
+    numOfRatings: 994,
+    avgRatings: 4.7,
+
+}
+{
+    name: Piccolo Mondo,
+    address: Mandela Square, Corner & 2146, 5th Ave, Rivonia, Sandton,
+    contacts: 011 282 7000,
+    image: https://i.postimg.cc/yxMKxRBs/go376072.jpg,
+    numOfRatings: 90,
+    avgRatings: 4.3,
+
+}
+{
+    name: The Butcher Shop & Grill,
+    address: Shop 30 Nelson Mandela Square Sandton, 2196,
+    contacts: 011 784 8676,
+    image: https://i.postimg.cc/66kfVhWw/1126-the-butcher-shop-and-grill-sandton.jpg,
+    numOfRatings: 1523,
+    avgRatings: 4.3,
+
+}
+{
+    name: Stelle Restaurant,
+    address: 61 Rivonia Rd, Sandhurst, Sandton, 2196,
+    contacts: 064 140 2119,
+    image: https://i.postimg.cc/Y9nMK9Sf/outdoor-dining-area-under.jpg,
+    numOfRatings: 250,
+    avgRatings: 4.6,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
+{
+    name: ,
+    address: ,
+    contacts: ,
+    image: ,
+    numOfRatings: ,
+    avgRatings: ,
+
+}
