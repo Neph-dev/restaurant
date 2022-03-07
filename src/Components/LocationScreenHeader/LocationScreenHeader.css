@@ -1,9 +1,37 @@
-.headerImage {
+.header-background-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   top: 0;
   position: absolute;
+
+  background-image: url("../../Assets/Sandton.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("https://i.postimg.cc/RhPRyWB0/panorama-shot-sandton-city-johannesburg-night-gauteng-panorama-shot-sandton-city-johannesburg-night.jpg");
   background-position: center;
+
+  filter: brightness(0.8);
+}
+
+.go-to-home {
+  color: #fff;
+  margin: 1rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.welcome-text {
+  text-align: center;
+  position: relative;
+  padding-top: 25px;
+  color: #fff;
+}
+
+.area-title-container {
+  background-color: #08172e;
+}
+.area-title {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
 }

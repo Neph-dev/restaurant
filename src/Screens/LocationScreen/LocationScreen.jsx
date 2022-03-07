@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 /* import components */
 import LocationScreenHeader from '../../Components/LocationScreenHeader/LocationScreenHeader';
@@ -15,12 +15,12 @@ function LocationScreen(items) {
     useEffect(() => {
         const fetchRestaurants = async () => {
             try {
-                const restaurantsResult  = await API.graphql(
+                const restaurantsResult = await API.graphql(
                     graphqlOperation(listRestaurants)
                 )
                 setRestaurants(restaurantsResult.data.listRestaurants.items)
                 console.log(restaurantsResult.data.listRestaurants.items)
-            }catch(error) {
+            } catch (error) {
                 console.log(error)
             }
         }
@@ -28,17 +28,11 @@ function LocationScreen(items) {
     }, [])
 
     return (
-        <div>
+        <>
             <LocationScreenHeader />
-            <div style={{backgroundColor:'#08172E', marginTop:90,}}>
 
-                <h3 style={{position:'relative', textAlign:'center', color:'#ffffff', padding:20}}>
-                    Restaurants in Sandton
-                </h3>
-                {restaurants.map((item) => <RestaurantsList key={item.id} value={item} />)}
-                
-            </div>
-        </div>
+            <RestaurantsList />
+        </>
     );
 }
 

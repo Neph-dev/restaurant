@@ -1,19 +1,27 @@
 import React from 'react';
+
 import "./LocationScreenHeader.css"
 
-function LocationScreenHeader(props) {
+
+function LocationScreenHeader() {
     return (
         <div>
-            <div className="headerImage"/>
-            <h4>
-                    <a href="/" style={{color:"#000000", textDecoration:'none', position:'relative'}}>
+            <div style={{ position: 'relative', height: 200 }}>
+                <div className="header-background-image" />
+                <h4>
+                    <a href="/" className='go-to-home'>
                         Home
                     </a>
                 </h4>
-            <div>
-                <h1 style={{textAlign: 'center', position:'relative', paddingTop:25, color:'#ffffff'}}>
+                <h1 className='welcome-text'>
                     Welcome to Sandton City
                 </h1>
+            </div>
+
+            <div className='area-title-container'>
+                <h3 className='area-title'>
+                    Restaurants in Sandton
+                </h3>
             </div>
         </div>
     );
