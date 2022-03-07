@@ -1,38 +1,41 @@
 .restaurant-list-container {
   display: flex;
   background-color: #dce0df;
-  margin-top: 10px;
 }
 .restaurant-image {
   background-position: center;
   background-size: contain;
   margin-bottom: auto;
   margin-top: auto;
-  height: 310px;
-  width: 400px;
+  height: 250px;
+  width: 300px;
 }
 .restaurant-name {
   color: #000;
 }
-.viewMenuButton {
-  margin-right: -15%;
-  position: absolute;
-  border-radius: 10;
-  color: #ffffff;
-  background-color: #15273f;
-  border-width: 0;
-  padding: 10;
+
+.restaurant-details-container {
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-top: 0px;
 }
 
 .restaurant-details {
-  padding-bottom: 50px;
-  padding-left: 10px;
-  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
+
 .address-container {
   display: flex;
   margin-bottom: 0;
   margin-top: 0.5rem;
+}
+
+.restaurant-hours {
+  display: inline-block;
+  margin-right: -40rem;
+  margin-top: -2rem;
+  font-size: 14px;
 }
 
 .bold-text {
@@ -52,32 +55,12 @@
 
 .buttons-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-left: 20%;
+  margin-top: 2rem;
 }
 
-.btn-view-menu {
-  margin-right: -15%;
-  position: absolute;
-  border-radius: 10px;
-  color: #fff;
-  background-color: #15273f;
-  border-width: 0;
-  padding: 10px;
-}
-.btn-gallery {
-  position: absolute;
-  margin-right: 3%;
-  border-radius: 10px;
-  color: #fff;
-  background-color: #2b3d5b;
-  border-width: 0;
-  padding: 10px;
-}
-
-.btn-book {
-  position: absolute;
-  margin-right: -33%;
+.button-element {
   border-radius: 10px;
   color: #fff;
   background-color: #15273f;
