@@ -27,11 +27,23 @@
 }
 
 .area-title-container {
+  position: sticky;
+  width: 100%;
   background-color: #08172e;
 }
 .area-title {
+  color: #fff;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
   position: relative;
   text-align: center;
-  color: #fff;
-  padding: 20px;
+}
+.safety-note {
+  color: yellowgreen;
+  font-size: 17px;
+  margin-left: 1rem;
+  position: relative;
+  text-align: center;
 }

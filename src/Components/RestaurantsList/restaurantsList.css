@@ -1,28 +1,50 @@
 .restaurant-list-container {
   display: flex;
   background-color: #dce0df;
+  justify-content: space-between;
+  height: auto;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  width: 45%;
+}
+.image_description-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #15273f;
 }
 .restaurant-image {
   background-position: center;
   background-size: contain;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px;
   margin-bottom: auto;
   margin-top: auto;
-  height: 250px;
-  width: 300px;
+  height: 200px;
+  width: 45%;
+}
+.restaurant-description {
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 14px;
+  width: 45%;
 }
 .restaurant-name {
+  font-size: 20px;
   color: #000;
 }
 
 .restaurant-details-container {
-  padding-bottom: 0px;
-  padding-left: 10px;
-  padding-top: 0px;
+  font-size: 15px;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .restaurant-details {
   display: flex;
-  justify-content: space-around;
 }
 
 .address-container {
@@ -33,9 +55,7 @@
 
 .restaurant-hours {
   display: inline-block;
-  margin-right: -40rem;
   margin-top: -2rem;
-  font-size: 14px;
 }
 
 .bold-text {
@@ -56,7 +76,6 @@
 .buttons-container {
   display: flex;
   justify-content: space-around;
-  margin-left: 20%;
   margin-top: 2rem;
 }
 

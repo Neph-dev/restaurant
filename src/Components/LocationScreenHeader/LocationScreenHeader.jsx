@@ -5,7 +5,7 @@ import "./LocationScreenHeader.css"
 
 function LocationScreenHeader() {
     return (
-        <div>
+        <>
             <div style={{ position: 'relative', height: 200 }}>
                 <div className="header-background-image" />
                 <h4>
@@ -20,10 +20,10 @@ function LocationScreenHeader() {
 
             <div className='area-title-container'>
                 <h3 className='area-title'>
-                    Restaurants in Sandton
+                    <div>Restaurants in Sandton</div> <div className='safety-note'>Safety Note 8/10: Good</div>
                 </h3>
             </div>
-        </div>
+        </>
     );
 }
 

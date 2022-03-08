@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Styles.css"
+import "./restaurantsList.css";
 
 import StarsReviews from '../StarsReviews/StarsReviews';
 
@@ -17,76 +17,62 @@ function RestaurantsList(props) {
 
     return (
         <div className="restaurant-list-container">
+            <div style={{ width: '100%' }}>
+                <div className="image_description-container">
+                    <img src={bigMouthImg} className="restaurant-image" alt="" />
 
-            <img src={bigMouthImg} className="restaurant-image" alt="" />
-
-            <div className='restaurant-details-container'>
-                <h3 className='restaurant-name'>The Big Mouth</h3>
-                <div className='restaurant-details'>
-
-                    <div style={{ marginLeft: '-5rem' }}>
-                        <div className="address-container">
-                            <div className='bold-text'>Address: </div>
-                            <div>1st Respublic Road, Sandton, South Africa 2005</div>
-                        </div>
-
-                        <div className='flex-bold-text'>Status:
-                            <div className='status'>Open</div>
-                        </div>
-                        <div className='flex-bold-text'>Contact(s):
-                            <div>+27 67 791 9267</div>
-                        </div>
-
-                        {/* Number of stars components */}
-                        <StarsReviews avgRatings={avgRatings} numOfRatings={numOfRatings} />
-
-                        <div>
-                            <div className='buttons-container'>
-                                <button className='button-element' >
-                                    View Menu
-                                </button>
-                                <button className='button-element' >
-                                    Gallery
-                                </button>
-                                <button className='button-element'>
-                                    Book
-                                </button>
-                                <button className='button-element'>
-                                    Map
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='restaurant-hours'>
-
-                        <div className='bold-text'>Operating hours:</div>
-
-                        <div style={{ display: 'flex' }}>
-                            <div className='bold-text'>Monday:</div> 12pm - 10pm
-                        </div>
-                        <div style={{ display: 'flex' }}>
-                            <div className='bold-text'>Tuesday:</div> 12pm - 10pm
-                        </div>
-                        <div style={{ display: 'flex' }}>
-                            <div className='bold-text'>Wednesday:</div> 12pm - 10pm
-                        </div>
-                        <div style={{ display: 'flex' }}>
-                            <div className='bold-text'>Thursday:</div> 12pm - 10pm
-                        </div>
-                        <div style={{ display: 'flex' }}>
-                            <div className='bold-text'>Friday:</div> 12pm - 10pm
-                        </div>
-                        <div style={{ display: 'flex' }}>
-                            <div className='bold-text'>Saturday:</div> 12pm - 10pm
-                        </div>
-                        <div style={{ display: 'flex' }}>
-                            <div className='bold-text'>Sunday:</div> 12pm - 10pm
-                        </div>
+                    <div className="restaurant-description">
+                        <div>The Big Mouth</div>
+                        "Ought these are balls place mrs their times add she.
+                        Taken no great widow spoke of it small. Genius use
+                        except son esteem merely her limits. Sons park by do
+                        make on. It do oh cottage offered cottage in written."
                     </div>
                 </div>
-            </div >
-        </div >
+                <div className='restaurant-details-container'>
+                    <h3 className='restaurant-name'>The Big Mouth</h3>
+                    <div className='flex-bold-text' style={{ color: '#D4AF37' }}>
+                        RRR
+                    </div>
+                    <div className="address-container">
+                        <div className='bold-text'>Address: </div>
+                        <div>1st Respublic Road, Sandton, South Africa 2005</div>
+                    </div>
+                    <div className='flex-bold-text'>
+                        Type of food: Chinese
+                    </div>
+                    <div className='flex-bold-text' style={{ textDecoration: 'underline' }}>
+                        Today: 12pm - 10pm
+                    </div>
+                    <div className='flex-bold-text'>Status:
+                        <div className='status'>Open</div>
+                    </div>
+                    <div className='flex-bold-text'>Contact(s):
+                        <div>+27 67 791 9267</div>
+                    </div>
+
+                    {/* Number of stars components */}
+                    <StarsReviews avgRatings={avgRatings} numOfRatings={numOfRatings} />
+
+                    <div className='buttons-container'>
+                        <button className='button-element' >
+                            View Menu
+                        </button>
+                        <button className='button-element' >
+                            Gallery
+                        </button>
+                        <button className='button-element'>
+                            Book
+                        </button>
+                        <button className='button-element'>
+                            Map
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     );
 }
 
