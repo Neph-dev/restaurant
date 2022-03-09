@@ -8,6 +8,8 @@ import RestaurantsList from '../../Components/RestaurantsList/RestaurantsList';
 import { API, graphqlOperation } from 'aws-amplify'
 import { listRestaurants } from '../../graphql/queries';
 import { IterationReason } from 'azure-devops-node-api/interfaces/GitInterfaces';
+import SearchBar from './Components/SearchBar';
+import InfoArea from './Components/InfoArea';
 
 function LocationScreen(items) {
     const [restaurants, setRestaurants] = useState([])
@@ -30,7 +32,8 @@ function LocationScreen(items) {
     return (
         <>
             <LocationScreenHeader />
-
+            <InfoArea />
+            <SearchBar />
             <RestaurantsList />
         </>
     );

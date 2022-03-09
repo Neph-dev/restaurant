@@ -31,15 +31,15 @@ function RestaurantsList(props) {
                 </div>
                 <div className='restaurant-details-container'>
                     <h3 className='restaurant-name'>The Big Mouth</h3>
+                    <div className='flex-bold-text'>
+                        Chinese
+                    </div>
                     <div className='flex-bold-text' style={{ color: '#D4AF37' }}>
                         RRR
                     </div>
                     <div className="address-container">
                         <div className='bold-text'>Address: </div>
                         <div>1st Respublic Road, Sandton, South Africa 2005</div>
-                    </div>
-                    <div className='flex-bold-text'>
-                        Type of food: Chinese
                     </div>
                     <div className='flex-bold-text' style={{ textDecoration: 'underline' }}>
                         Today: 12pm - 10pm

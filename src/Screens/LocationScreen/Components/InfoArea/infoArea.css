@@ -1,0 +1,48 @@
+#infoArea {
+  align-items: center;
+  color: #000;
+  display: flex;
+  font-size: 23px;
+  justify-content: space-between;
+  height: 5rem;
+  width: 100%;
+}
+
+.safety-note {
+  border-right: 1px solid;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 33%;
+}
+
+.note {
+  color: green;
+  margin-left: 0.5rem;
+}
+
+.info-time-container {
+  border-right: 1px solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 33%;
+}
+
+.info-weather {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  width: 33%;
+}
+.info-weather-icon {
+  background-image: url("../../../../Assets/sunny.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.info-weather-type {
+  margin-left: 5px;
+}

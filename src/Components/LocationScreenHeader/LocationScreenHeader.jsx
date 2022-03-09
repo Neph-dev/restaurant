@@ -20,7 +20,7 @@ function LocationScreenHeader() {
 
             <div className='area-title-container'>
                 <h3 className='area-title'>
-                    <div>Restaurants in Sandton</div> <div className='safety-note'>Safety Note 8/10: Good</div>
+                    <div>Restaurants in Sandton</div>
                 </h3>
             </div>
         </>
