@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
+import axios from 'axios';
+
 import './infoArea.css';
 
+
+const openWeatherMapAPI = 'da8f6401dfc0fbdac5443ba21d75f11e'
+const units = 'metric'
+const countryCode = 'ZA'
+const location = 'northcliff'
+const weatherBaseUrl = `https://api.openweathermap.org/data/2.5/weather?`
 
 function InfoArea(props) {
 
@@ -15,9 +23,21 @@ function InfoArea(props) {
     const [minutes, setMinutes] = useState(currentMinutes)
     const [seconds, setSeconds] = useState(currentSeconds)
 
-    const displayTime = () => {
-        return `${currentHours} : ${currentMinutes}`
-    }
+    //weather information
+    const [areaName, setAreaName] = useState('');
+    const [areaDegree, setAreaDegree] = useState('');
+    const [weatherDescription, setWeatherDescription] = useState('');
+
+
+    useEffect(() => {
+        axios.get(`${weatherBaseUrl}q=${location},${countryCode}&units=${units}&appid=${openWeatherMapAPI}`)
+            .then(response => {
+                setAreaName(response.data.name)
+                setAreaDegree(Math.floor(response.data.main.temp))
+                setWeatherDescription(response.data.weather[0].main)
+                console.log(response.data.weather[0])
+            })
+    }, [])
     useEffect((event) => {
         const timer = setTimeout(() => {
             setSeconds((seconds) => seconds + 1);
@@ -39,8 +59,8 @@ function InfoArea(props) {
             </div>
             <div className="info-weather">
                 <div className="info-weather-icon" />
-                <div>24°</div>
-                <div className='info-weather-type'>Sunny in Sandton</div>
+                <div>{areaDegree}°c</div>
+                <div className='info-weather-type'>{weatherDescription} in {areaName}</div>
             </div>
         </div>
     );
