@@ -28,10 +28,15 @@ function LocationScreen(items) {
     const searchRestaurant = (text) => {
         if (text) {
             const newData = restaurantData.filter((item) => {
-                const itemData = item.restaurantName ? item.restaurantName.toUpperCase()
+                const itemData = item.restaurantName
+                    ? item.restaurantName.toUpperCase()
+                    : ''.toUpperCase()
+                const secondItemData = item.type_of_food
+                    ? item.type_of_food.toUpperCase()
                     : ''.toUpperCase()
                 const textData = text.toUpperCase()
                 return itemData.indexOf(textData) > -1
+                    || secondItemData.indexOf(textData) > -1
             });
             setRestaurantFilterData(newData)
             setSearchRestaurantByName(text)
@@ -52,8 +57,7 @@ function LocationScreen(items) {
             />
             <SearchBar
                 searchRestaurantByName={searchRestaurantByName}
-                searchRestaurant={searchRestaurant}
-                searchInput={searchInput} setSearchInput={setSearchInput} />
+                searchRestaurant={searchRestaurant} />
             <RestaurantsList
                 restaurantAreaId={restaurantAreaId}
                 restaurantFilterData={restaurantFilterData} />

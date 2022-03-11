@@ -11,7 +11,9 @@ function SearchBar({ searchRestaurant, searchRestaurantByName }) {
                 placeholder="Type In a Restaurant Name or a Type Of Food"
                 className='location-search'
                 value={searchRestaurantByName}
-                onChange={(e) => searchRestaurant(e.target.value)}
+                onChange={(e) => {
+                    searchRestaurant(e.target.value)
+                }}
                 autoFocus />
             <div className="location-search-icon" />
         </div>
