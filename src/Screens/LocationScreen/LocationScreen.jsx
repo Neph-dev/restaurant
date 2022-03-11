@@ -17,7 +17,6 @@ function LocationScreen(items) {
     const restaurantSafetyNote = location.state.restaurantSafetyNote
     const restaurantAreaLat = location.state.lat
     const restaurantAreaLon = location.state.lon
-    const restaurantName = location.state.restaurantName
 
     return (
         <>
@@ -29,7 +28,7 @@ function LocationScreen(items) {
                 restaurantAreaLon={restaurantAreaLon}
             />
             <SearchBar />
-            <RestaurantsList restaurantName={restaurantName} />
+            <RestaurantsList restaurantAreaId={restaurantAreaId} />
         </>
     );
 }

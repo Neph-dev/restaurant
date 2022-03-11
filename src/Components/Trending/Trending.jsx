@@ -14,7 +14,6 @@ function Trending() {
     const [restaurantSafetyNote, setRestaurantSafetyNote] = useState('')
     const [lat, setLat] = useState('')
     const [lon, setLon] = useState('')
-    const [restaurantName, setRestaurantName] = useState('')
 
     const restaurantAreaDetails = {
         restaurantAreaName,
@@ -22,7 +21,6 @@ function Trending() {
         restaurantAreaId,
         lat,
         lon,
-        restaurantName
     }
 
     return (
@@ -44,7 +42,6 @@ function Trending() {
                                 setRestaurantSafetyNote(restaurantArea.safety_note)
                                 setLat(restaurantArea.lat)
                                 setLon(restaurantArea.lon)
-                                setRestaurantName(restaurantArea.restaurants.restaurantName)
                             }}>
                             <Link to={{
                                 pathname: "./Location",
