@@ -10,6 +10,8 @@ import RestaurantData from '../../Data/RestaurantData';
 
 function RestaurantsList({ restaurantAreaId, restaurantFilterData }) {
 
+    const [center, setCenter] = useState(false)
+
     const [restaurants, setRestaurants] = useState(RestaurantData)
 
     const numOfRatings = undefined;
@@ -21,9 +23,12 @@ function RestaurantsList({ restaurantAreaId, restaurantFilterData }) {
                 restaurantFilterData.map(restaurant => (
 
                     restaurant.areaDataId === restaurantAreaId ?
-                        <div key={restaurant.restaurantName} className="restaurant-list">
+                        <div
+                            key={restaurant.restaurantName}
+                            onClick={() => setCenter(true)}
+                            className="restaurant-list">
 
-                            <div style={{ width: '100%' }}>
+                            <div style={{ width: '100%' }} >
                                 <div className="image_description-container">
                                     <img src={bigMouthImg} className="restaurant-image" alt="" />
 
