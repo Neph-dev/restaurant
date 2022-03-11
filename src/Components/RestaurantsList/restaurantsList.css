@@ -1,5 +1,10 @@
 .restaurant-list-container {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.restaurant-list {
+  display: flex;
   background-color: #dce0df;
   justify-content: space-between;
   height: auto;

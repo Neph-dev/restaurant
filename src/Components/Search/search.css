@@ -15,6 +15,7 @@
   outline: 0;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-transform: capitalize;
   height: 100%;
   width: 90%;
 }

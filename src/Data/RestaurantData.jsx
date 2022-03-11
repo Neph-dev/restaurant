@@ -19,6 +19,24 @@ const RestaurantData = [
         contacts: '+27 (0)67 791 9267'
     },
     {
+        id: 2,
+        areaDataId: 'ad1',
+        restaurantName: 'The Big Everything',
+        type_of_food: 'African',
+        address: '1st Respublic Road, Sandton, South Africa 2005',
+        price_range: 3,
+        contacts: '+27 (0)67 791 9267'
+    },
+    {
+        id: 2,
+        areaDataId: 'ad1',
+        restaurantName: 'The Big You',
+        type_of_food: 'Indian',
+        address: '1st Respublic Road, Sandton, South Africa 2005',
+        price_range: 3,
+        contacts: '+27 (0)67 791 9267'
+    },
+    {
         id: 3,
         areaDataId: 'ad2',
         restaurantName: 'The Big Hear',

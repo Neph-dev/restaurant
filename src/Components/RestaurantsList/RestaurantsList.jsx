@@ -16,12 +16,12 @@ function RestaurantsList({ restaurantAreaId, restaurantFilterData }) {
     const avgRatings = undefined;
 
     return (
-        <div style={{ display: 'flex' }}>
+        <div className='restaurant-list-container'>
             {
                 restaurantFilterData.map(restaurant => (
 
                     restaurant.areaDataId === restaurantAreaId ?
-                        <div key={restaurant.restaurantName} className="restaurant-list-container">
+                        <div key={restaurant.restaurantName} className="restaurant-list">
 
                             <div style={{ width: '100%' }}>
                                 <div className="image_description-container">

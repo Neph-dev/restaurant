@@ -8,7 +8,7 @@ function Search({ searchRestaurantAreaByName, searchRestaurantArea }) {
         <div className="search-container">
             <input
                 type="search"
-                placeholder="Type In a Location or a Type Of Food"
+                placeholder="Type In a Location ..." //or a Type Of Food
                 className='search'
                 value={searchRestaurantAreaByName}
                 onChange={(e) => {
