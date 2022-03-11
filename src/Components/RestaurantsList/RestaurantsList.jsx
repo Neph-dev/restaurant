@@ -8,24 +8,20 @@ import StarsReviews from '../StarsReviews/StarsReviews';
 import RestaurantData from '../../Data/RestaurantData';
 
 
-function RestaurantsList({ restaurantAreaId }) {
+function RestaurantsList({ restaurantAreaId, restaurantFilterData }) {
 
     const [restaurants, setRestaurants] = useState(RestaurantData)
 
-    const name = undefined;
-    const address = undefined;
-    const image = undefined;
     const numOfRatings = undefined;
     const avgRatings = undefined;
-    const contacts = undefined;
 
     return (
         <div style={{ display: 'flex' }}>
             {
-                restaurants.map(restaurant => (
+                restaurantFilterData.map(restaurant => (
 
                     restaurant.areaDataId === restaurantAreaId ?
-                        <div className="restaurant-list-container">
+                        <div key={restaurant.restaurantName} className="restaurant-list-container">
 
                             <div style={{ width: '100%' }}>
                                 <div className="image_description-container">

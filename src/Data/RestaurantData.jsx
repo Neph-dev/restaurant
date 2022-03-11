@@ -13,7 +13,7 @@ const RestaurantData = [
         id: 2,
         areaDataId: 'ad1',
         restaurantName: 'The Big Stars',
-        type_of_food: 'Chinese',
+        type_of_food: 'Western',
         address: '1st Respublic Road, Sandton, South Africa 2005',
         price_range: 3,
         contacts: '+27 (0)67 791 9267'
