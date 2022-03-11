@@ -1,0 +1,7 @@
+.App-clock {
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  color: #fff;
+  z-index: 2;
+}

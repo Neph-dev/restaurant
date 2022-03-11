@@ -1,0 +1,42 @@
+.header-background-image {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+
+  background-image: url("../../../../Assets/Sandton.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  filter: brightness(0.8);
+}
+
+.go-to-home {
+  color: #fff;
+  margin: 1rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.welcome-text {
+  text-align: center;
+  position: relative;
+  padding-top: 25px;
+  color: #fff;
+}
+
+.area-title-container {
+  position: sticky;
+  width: 100%;
+  background-color: #08172e;
+}
+.area-title {
+  color: #fff;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}

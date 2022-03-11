@@ -1,15 +1,15 @@
 import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom';
 
-import HomeScreen from '../Screens/HomeScreen/HomeScreen';
-import LocationScreen from '../Screens/LocationScreen/LocationScreen';
+import HomePage from '../Pages/HomePage';
+import RestaurantsPage from '../Pages/RestaurantsPage';
 
 
-function Router(props) {
+function Router() {
     return (
         <Routers>
             <Switch>           
-                <Route exact path='/' component={HomeScreen} />
-                <Route exact path='/Location' component={LocationScreen} />
+                <Route exact path='/' component={HomePage} />
+                <Route exact path='/Restaurants' component={RestaurantsPage} />
             </Switch>
         </Routers>
     );
