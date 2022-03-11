@@ -1,26 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import "./LocationScreenHeader.css"
 
 
-function LocationScreenHeader() {
+function LocationScreenHeader({ restaurantAreaName }) {
     return (
         <>
             <div style={{ position: 'relative', height: 200 }}>
                 <div className="header-background-image" />
                 <h4>
-                    <a href="/" className='go-to-home'>
+                    <Link to='/' className='go-to-home'>
                         Home
-                    </a>
+                    </Link>
                 </h4>
                 <h1 className='welcome-text'>
-                    Welcome to Sandton City
+                    Welcome to {restaurantAreaName}
                 </h1>
             </div>
 
             <div className='area-title-container'>
                 <h3 className='area-title'>
-                    <div>Restaurants in Sandton</div>
+                    <div>Restaurants in {restaurantAreaName}</div>
                 </h3>
             </div>
         </>

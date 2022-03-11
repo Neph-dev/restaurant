@@ -16,8 +16,16 @@
   width: 33%;
 }
 
-.note {
+.green_note {
   color: green;
+  margin-left: 0.5rem;
+}
+.orange_note {
+  color: orange;
+  margin-left: 0.5rem;
+}
+.red_note {
+  color: red;
   margin-left: 0.5rem;
 }
 

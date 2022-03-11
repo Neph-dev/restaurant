@@ -6,7 +6,7 @@ import StarsReviews from '../StarsReviews/StarsReviews';
 import bigMouthImg from '../../Assets/BigMouth.jpg'
 
 
-function RestaurantsList(props) {
+function RestaurantsList({ restaurantName }) {
 
     const name = undefined;
     const address = undefined;
@@ -30,7 +30,7 @@ function RestaurantsList(props) {
                     </div>
                 </div>
                 <div className='restaurant-details-container'>
-                    <h3 className='restaurant-name'>The Big Mouth</h3>
+                    <h3 className='restaurant-name'>{restaurantName}</h3>
                     <div className='flex-bold-text'>
                         Chinese
                     </div>

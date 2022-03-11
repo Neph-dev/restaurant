@@ -1,40 +1,35 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 /* import components */
 import LocationScreenHeader from '../../Components/LocationScreenHeader/LocationScreenHeader';
 import RestaurantsList from '../../Components/RestaurantsList/RestaurantsList';
 
-/* Let's import our GraphQl queries and extentions  */
-import { API, graphqlOperation } from 'aws-amplify'
-import { listRestaurants } from '../../graphql/queries';
-import { IterationReason } from 'azure-devops-node-api/interfaces/GitInterfaces';
 import SearchBar from './Components/SearchBar';
 import InfoArea from './Components/InfoArea';
 
 function LocationScreen(items) {
-    const [restaurants, setRestaurants] = useState([])
 
-    useEffect(() => {
-        const fetchRestaurants = async () => {
-            try {
-                const restaurantsResult = await API.graphql(
-                    graphqlOperation(listRestaurants)
-                )
-                setRestaurants(restaurantsResult.data.listRestaurants.items)
-                console.log(restaurantsResult.data.listRestaurants.items)
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        fetchRestaurants()
-    }, [])
+    const location = useLocation()
+    console.log(location)
+    const restaurantAreaId = location.state.restaurantAreaId
+    const restaurantAreaName = location.state.restaurantAreaName
+    const restaurantSafetyNote = location.state.restaurantSafetyNote
+    const restaurantAreaLat = location.state.lat
+    const restaurantAreaLon = location.state.lon
+    const restaurantName = location.state.restaurantName
 
     return (
         <>
-            <LocationScreenHeader />
-            <InfoArea />
+            <LocationScreenHeader restaurantAreaName={restaurantAreaName} />
+            <InfoArea
+                restaurantAreaName={restaurantAreaName}
+                restaurantSafetyNote={restaurantSafetyNote}
+                restaurantAreaLat={restaurantAreaLat}
+                restaurantAreaLon={restaurantAreaLon}
+            />
             <SearchBar />
-            <RestaurantsList />
+            <RestaurantsList restaurantName={restaurantName} />
         </>
     );
 }

@@ -5,13 +5,17 @@ import axios from 'axios';
 import './infoArea.css';
 
 
-const openWeatherMapAPI = 'da8f6401dfc0fbdac5443ba21d75f11e'
-const units = 'metric'
-const countryCode = 'ZA'
-const location = 'northcliff'
-const weatherBaseUrl = `https://api.openweathermap.org/data/2.5/weather?`
+function InfoArea({
+    restaurantAreaName,
+    restaurantAreaLat,
+    restaurantAreaLon,
+    restaurantSafetyNote }) {
 
-function InfoArea(props) {
+    const openWeatherMapAPI = 'da8f6401dfc0fbdac5443ba21d75f11e'
+    const units = 'metric'
+    const countryCode = 'ZA'
+    const location = restaurantAreaName
+    const weatherBaseUrl = `https://api.openweathermap.org/data/2.5/weather?`
 
     let fullDate = new Date()
     const time = fullDate.toLocaleTimeString({ hour: 'numeric', hour12: false, minute: 'numeric' });
@@ -30,12 +34,11 @@ function InfoArea(props) {
 
 
     useEffect(() => {
-        axios.get(`${weatherBaseUrl}q=${location},${countryCode}&units=${units}&appid=${openWeatherMapAPI}`)
+        axios.get(`${weatherBaseUrl}lat=${restaurantAreaLat}&lon=${restaurantAreaLon}&units=${units}&appid=${openWeatherMapAPI}`)
             .then(response => {
                 setAreaName(response.data.name)
                 setAreaDegree(Math.floor(response.data.main.temp))
                 setWeatherDescription(response.data.weather[0].main)
-                console.log(response.data.weather[0])
             })
     }, [])
     useEffect((event) => {
@@ -52,7 +55,16 @@ function InfoArea(props) {
     return (
         <div id='infoArea'>
             <div className='safety-note'>
-                <div>Safety Note</div> <div className='note'>8/10: Good</div>
+                <div>Safety Note</div> <div className={
+                    restaurantSafetyNote >= 7 ? 'green_note' :
+                        restaurantSafetyNote >= 5 ? 'orange_note' :
+                            restaurantSafetyNote < 5 ? 'red_note' : ''}>
+                    {restaurantSafetyNote}/10: {
+                        restaurantSafetyNote >= 9 ? "Excellent" :
+                            restaurantSafetyNote >= 7 ? "Good" :
+                                restaurantSafetyNote >= 5 ? "Average" :
+                                    restaurantSafetyNote < 5 ? 'Bad' : ''}
+                </div>
             </div>
             <div className="info-time-container">
                 {time}
@@ -60,7 +72,7 @@ function InfoArea(props) {
             <div className="info-weather">
                 <div className="info-weather-icon" />
                 <div>{areaDegree}°c</div>
-                <div className='info-weather-type'>{weatherDescription} in {areaName}</div>
+                <div className='info-weather-type'>{weatherDescription} in {location}</div>
             </div>
         </div>
     );
