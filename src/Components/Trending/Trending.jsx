@@ -6,7 +6,7 @@ import './trending.css';
 import AreaData from '../../Data/AreaData';
 
 
-function Trending() {
+function Trending({ restaurantAreaFilterData }) {
 
     const [restaurantsArea, setRestaurantsArea] = useState(AreaData)
     const [restaurantAreaName, setRestaurantAreaName] = useState('')
@@ -32,7 +32,7 @@ function Trending() {
             <div className='locations-list-container'>
 
                 {
-                    restaurantsArea.map(restaurantArea => (
+                    restaurantAreaFilterData.map(restaurantArea => (
                         <div
                             className="locations-element"
                             key={restaurantArea.id}

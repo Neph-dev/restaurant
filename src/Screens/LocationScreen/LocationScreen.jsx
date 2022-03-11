@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 /* import components */
@@ -12,7 +12,6 @@ import RestaurantData from '../../Data/RestaurantData'
 
 function LocationScreen(items) {
 
-    const [searchInput, setSearchInput] = useState('')
     const [restaurantData, setRestaurantData] = useState(RestaurantData)
     const [restaurantFilterData, setRestaurantFilterData] = useState(RestaurantData)
     const [searchRestaurantByName, setSearchRestaurantByName] = useState('')

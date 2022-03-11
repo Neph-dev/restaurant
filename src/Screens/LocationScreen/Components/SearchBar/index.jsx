@@ -7,8 +7,8 @@ function SearchBar({ searchRestaurant, searchRestaurantByName }) {
     return (
         <div className="location-search-container">
             <input
-                type="location-search"
-                placeholder="Type In a Restaurant Name or a Type Of Food"
+                type="search"
+                placeholder="Type In a Restaurant Name " //or a Type Of Food
                 className='location-search'
                 value={searchRestaurantByName}
                 onChange={(e) => {
