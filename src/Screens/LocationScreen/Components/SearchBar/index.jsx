@@ -3,7 +3,7 @@ import React from 'react';
 import './locationSearchBar.css'
 
 
-function SearchBar({ setSearchInput, searchRestaurant, searchRestaurantByName }) {
+function SearchBar({ searchRestaurant, searchRestaurantByName }) {
     return (
         <div className="location-search-container">
             <input

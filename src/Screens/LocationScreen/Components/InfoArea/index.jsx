@@ -16,6 +16,7 @@ function InfoArea({
     const countryCode = 'ZA'
     const location = restaurantAreaName
     const weatherBaseUrl = `https://api.openweathermap.org/data/2.5/weather?`
+    const baseIconUrl = `http://openweathermap.org/img/wn/`
 
     let fullDate = new Date()
     const time = fullDate.toLocaleTimeString({ hour: 'numeric', hour12: false, minute: 'numeric' });
@@ -31,16 +32,21 @@ function InfoArea({
     const [areaName, setAreaName] = useState('');
     const [areaDegree, setAreaDegree] = useState('');
     const [weatherDescription, setWeatherDescription] = useState('');
+    const [weatherIcon, setWeatherIcon] = useState('');
 
 
     useEffect(() => {
+
         axios.get(`${weatherBaseUrl}lat=${restaurantAreaLat}&lon=${restaurantAreaLon}&units=${units}&appid=${openWeatherMapAPI}`)
             .then(response => {
                 setAreaName(response.data.name)
                 setAreaDegree(Math.floor(response.data.main.temp))
-                setWeatherDescription(response.data.weather[0].main)
+                setWeatherDescription(response.data.weather[0].description)
+                setWeatherIcon(response.data.weather[0].icon)
             })
+
     }, [])
+
     useEffect((event) => {
         const timer = setTimeout(() => {
             setSeconds((seconds) => seconds + 1);
@@ -70,7 +76,10 @@ function InfoArea({
                 {time}
             </div>
             <div className="info-weather">
-                <div className="info-weather-icon" />
+                <img
+                    src={`${baseIconUrl}${weatherIcon}@2x.png`}
+                    alt=''
+                    className="info-weather-icon" />
                 <div>{areaDegree}°c</div>
                 <div className='info-weather-type'>{weatherDescription} in {location}</div>
             </div>

@@ -1,4 +1,5 @@
 #infoArea {
+  background-color: #d5d5d5;
   align-items: center;
   color: #000;
   display: flex;
@@ -44,13 +45,16 @@
   width: 33%;
 }
 .info-weather-icon {
-  background-image: url("../../../../Assets/sunny.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 .info-weather-type {
+  align-items: center;
+  display: flex;
+  font-size: 17px;
   margin-left: 5px;
+  text-transform: capitalize;
 }
