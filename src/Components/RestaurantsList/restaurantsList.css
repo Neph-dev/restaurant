@@ -87,7 +87,6 @@
 
 .buttons-container {
   display: flex;
-  justify-content: space-around;
   margin-top: 2rem;
 }
 
@@ -96,5 +95,6 @@
   color: #fff;
   background-color: #15273f;
   border-width: 0;
+  margin-right: 5px;
   padding: 10px;
 }

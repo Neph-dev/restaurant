@@ -1,7 +1,7 @@
 
 const RestaurantData = [
     {
-        id: 1,
+        id: 'rd1',
         areaDataId: 'ad1',
         restaurantName: 'The Big Mouth',
         type_of_food: 'Chinese',
@@ -10,7 +10,7 @@ const RestaurantData = [
         contacts: '+27 (0)67 791 9267'
     },
     {
-        id: 2,
+        id: 'rd2',
         areaDataId: 'ad1',
         restaurantName: 'The Big Stars',
         type_of_food: 'Western',
@@ -19,7 +19,7 @@ const RestaurantData = [
         contacts: '+27 (0)67 791 9267'
     },
     {
-        id: 2,
+        id: 'rd3',
         areaDataId: 'ad1',
         restaurantName: 'The Big Everything',
         type_of_food: 'African',
@@ -28,7 +28,7 @@ const RestaurantData = [
         contacts: '+27 (0)67 791 9267'
     },
     {
-        id: 2,
+        id: 'rd4',
         areaDataId: 'ad1',
         restaurantName: 'The Big You',
         type_of_food: 'Indian',
@@ -37,7 +37,7 @@ const RestaurantData = [
         contacts: '+27 (0)67 791 9267'
     },
     {
-        id: 3,
+        id: 'rd5',
         areaDataId: 'ad2',
         restaurantName: 'The Big Hear',
         type_of_food: 'Chinese',
@@ -46,7 +46,7 @@ const RestaurantData = [
         contacts: '+27 (0)67 791 9267'
     },
     {
-        id: 4,
+        id: 'rd6',
         areaDataId: 'ad3',
         restaurantName: 'The Big Nose',
         type_of_food: 'Chinese',

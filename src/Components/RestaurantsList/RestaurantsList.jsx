@@ -67,21 +67,21 @@ function RestaurantsList({ restaurantAreaId, restaurantFilterData }) {
                                     </div>
 
                                     {/* Number of stars components */}
-                                    <StarsReviews avgRatings={avgRatings} numOfRatings={numOfRatings} />
+                                    <StarsReviews restaurantID={restaurant.id} />
 
                                     <div className='buttons-container'>
-                                        <button className='button-element' >
+                                        {/*<button className='button-element' >
                                             View Menu
                                         </button>
                                         <button className='button-element' >
                                             Gallery
                                         </button>
-                                        <button className='button-element'>
+                                         <button className='button-element'>
                                             Book
-                                        </button>
+                                        </button> 
                                         <button className='button-element'>
                                             Map
-                                        </button>
+                                        </button>*/}
                                     </div>
 
                                 </div>
