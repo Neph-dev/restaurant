@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import axios from 'axios';
 
+import ApiKeys from '../../../../Keys';
 import './infoArea.css';
 
 
@@ -11,7 +12,7 @@ function InfoArea({
     restaurantAreaLon,
     restaurantSafetyNote }) {
 
-    const openWeatherMapAPI = 'da8f6401dfc0fbdac5443ba21d75f11e'
+    const openWeatherMapAPI = ApiKeys.openWeather
     const units = 'metric'
     const countryCode = 'ZA'
     const location = restaurantAreaName
