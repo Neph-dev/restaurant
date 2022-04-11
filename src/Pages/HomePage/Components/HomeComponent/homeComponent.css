@@ -33,3 +33,22 @@
 .home-second-title {
   text-align: center;
 }
+
+@media only screen and (max-width: 900px) {
+  .home-container {
+    color: white;
+    height: auto;
+    width: 100vh;
+    overflow-y: auto;
+  }
+  .home-main-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .home-second-title {
+    font-size: 20px;
+    text-align: center;
+  }
+}

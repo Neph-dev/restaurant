@@ -46,7 +46,7 @@ function AreaList({ restaurantAreaFilterData }) {
                             <Link to={{
                                 pathname: "./Restaurants",
                                 state: restaurantAreaDetails
-                            }} style={{ color: '#ffffff' }}>
+                            }} style={{ color: '#ffffff', display: 'block' }}>
                                 <img
                                     src={restaurantArea.imageUrl}
                                     className='location-image'

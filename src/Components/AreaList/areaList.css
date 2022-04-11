@@ -4,6 +4,8 @@
 }
 
 .locations-list-container {
+  align-items: center;
+  justify-content:space-around;
   display: flex;
   flex-wrap: wrap;
   flex: 1 1;
@@ -15,7 +17,6 @@
 .locations-element {
   transition: transform 0.5s;
   margin-top: 25px;
-  margin-left: 13%;
 }
 .locations-element:hover {
   -ms-transform: scale(1.1); /* IE 9 */
@@ -30,6 +31,6 @@
 }
 
 .location-name {
-  margin-left: 50px;
+  text-align: center;
   text-decoration-line: underline;
 }

@@ -13,7 +13,7 @@
   margin-top: 1rem;
   padding-bottom: 1rem;
   transition: transform 0.2s;
-  width: 45%;
+  width: 30rem;
 }
 .restaurant-list:hover {
   transform: scale(1.05);
@@ -97,4 +97,15 @@
   border-width: 0;
   margin-right: 5px;
   padding: 10px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .restaurant-list-container {
+    align-items: center;
+    justify-content:space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+  }
 }
